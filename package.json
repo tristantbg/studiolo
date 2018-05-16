@@ -1,0 +1,12 @@
+{
+  "name": "parcel-static",
+  "version": "1.0.0",
+  "licence": "MIT",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --public-url ./"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.0"
+  }
+}
