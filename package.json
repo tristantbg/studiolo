@@ -7,9 +7,10 @@
     "build": "parcel build index.html --public-url ./"
   },
   "devDependencies": {
-    "node-sass": "^4.9.0"
+    "node-sass": "^4.9.0",
+    "stylus": "^0.54.5"
   },
   "dependencies": {
-    "parcel-bundler": "^1.8.1"
+    "parcel-bundler": "^1.11.0"
   }
 }

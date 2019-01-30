@@ -1,6 +1,55 @@
+<!doctype html>
 <html>
-<body>
-  <h1>Title</h1>
+  <head>
+    <!-- Priority tags. These must come first. -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge; chrome=1"> <!-- Render Chrome if available or using latest version of Internet Explorer (Recommended). -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <!-- Document Title -->
+    <title>Page Title</title>
+    <!-- Allows control over where resources are loaded from. Place as early in the document as possible, only applies to content below this tag. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+    <!-- Base URL to use for all relative URLs contained within the document -->
+    <base href="https://example.com/">
+    <!-- Search Eengine and Browser Meta Tags. -->
+    <meta name="description" content=""> <!-- Keep under 500 characters -->
+    <meta name="abstract"    content=""> <!-- Keep uder 100 characters -->
+    <!-- Open Graph Meta Tags (ogp.me) -->
+    <meta property="og:image"            content="http://example.com/image.jpg">  <!-- Web page thumbnail -->
+    <meta property="og:image"            content="http://example.com/image2.jpg"> <!-- Web page thumbnail (can be multiple) -->
+    <meta property="og:site_name"        content="Site Name">                     <!-- Web site title -->
+    <meta property="og:title"            content="Page Title">                    <!-- Web page title -->
+    <meta property="og:description"      content="Description of this web page">  <!-- Web page description -->
+    <meta property="og:type"             content="article">                       <!-- Content type ["product", "blog", "website", "book", "movie", ... ] -->
+    <meta property="og:url"              content="http://example.com/index.html"> <!-- Url to this web page -->
+    <!-- Facebook Meta Tags. -->
+    <meta property="fb:app_id" content="123456789">
+    <!-- Twitter Meta Tags. -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@site_account">
+    <meta name="twitter:creator" content="@individual_account">
+    <meta name="twitter:url" content="https://example.com/page.html">
+    <meta name="twitter:title" content="Content Title">
+    <meta name="twitter:description" content="Content description less than 200 characters">
+    <meta name="twitter:image" content="https://example.com/image.jpg">
+
+  </head>
+  <body>
+
+  
   <script src="./index.js"></script>
-</body>
+
+  <!-- Google Analytics. -->
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-XXXXXXXX-XX']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : '//www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+  </body>
 </html>
