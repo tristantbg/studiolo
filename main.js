@@ -1,6 +1,5 @@
-// import d'un module CSS
-import classes from './main.styl';
+import 'normalize.css'
+import './main.scss';
 
 export default () => {
-  console.log(classes.main);
 };
