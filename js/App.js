@@ -1,6 +1,6 @@
-import LazySizes from './components/lazysizes';
-import Loader from './components/loader';
-import Links from './components/links';
+import LazySizes from './components/Lazysizes';
+import Loader from './components/Loader';
+import Links from './components/Links';
 
 const App = {
   root: window.location.hostname == 'localhost' ? '/xxx/www' : '',
