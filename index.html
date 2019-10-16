@@ -7,10 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <!-- Document Title -->
     <title>Page Title</title>
-    <!-- Allows control over where resources are loaded from. Place as early in the document as possible, only applies to content below this tag. -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
-    <!-- Base URL to use for all relative URLs contained within the document -->
-    <base href="https://example.com/">
     <!-- Search Eengine and Browser Meta Tags. -->
     <meta name="description" content=""> <!-- Keep under 500 characters -->
     <meta name="abstract"    content=""> <!-- Keep uder 100 characters -->
@@ -36,7 +32,9 @@
   </head>
   <body>
 
-  
+    <div id="viewport"></div>
+
+
   <script src="./index.js"></script>
 
   <!-- Google Analytics. -->

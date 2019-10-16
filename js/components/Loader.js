@@ -10,7 +10,6 @@ const Loader = {
   loaded: _ => {
     // if (Loader.node) Loader.node.style.display = 'none';
     if (Loader.node) Loader.node.remove();
-    Loader.intro();
   }
 };
 
