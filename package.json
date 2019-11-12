@@ -10,11 +10,13 @@
     "node-sass": "^4.9.0"
   },
   "dependencies": {
+    "@shopify/draggable": "^1.0.0-beta.8",
     "babel-polyfill": "^6.26.0",
     "jeet": "^7.2.0",
     "lazysizes": "^5.1.2",
     "normalize.css": "^8.0.1",
     "parcel-bundler": "^1.12.3",
-    "rupture": "^0.7.1"
+    "rupture": "^0.7.1",
+    "rupture-sass": "^0.3.0"
   }
 }

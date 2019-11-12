@@ -6,39 +6,36 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge; chrome=1"> <!-- Render Chrome if available or using latest version of Internet Explorer (Recommended). -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <!-- Document Title -->
-    <title>Page Title</title>
-    <!-- Search Eengine and Browser Meta Tags. -->
-    <meta name="description" content=""> <!-- Keep under 500 characters -->
-    <meta name="abstract"    content=""> <!-- Keep uder 100 characters -->
-    <!-- Open Graph Meta Tags (ogp.me) -->
-    <meta property="og:image"            content="http://example.com/image.jpg">  <!-- Web page thumbnail -->
-    <meta property="og:image"            content="http://example.com/image2.jpg"> <!-- Web page thumbnail (can be multiple) -->
-    <meta property="og:site_name"        content="Site Name">                     <!-- Web site title -->
-    <meta property="og:title"            content="Page Title">                    <!-- Web page title -->
-    <meta property="og:description"      content="Description of this web page">  <!-- Web page description -->
-    <meta property="og:type"             content="article">                       <!-- Content type ["product", "blog", "website", "book", "movie", ... ] -->
-    <meta property="og:url"              content="http://example.com/index.html"> <!-- Url to this web page -->
-    <!-- Facebook Meta Tags. -->
-    <meta property="fb:app_id" content="123456789">
-    <!-- Twitter Meta Tags. -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@site_account">
-    <meta name="twitter:creator" content="@individual_account">
-    <meta name="twitter:url" content="https://example.com/page.html">
-    <meta name="twitter:title" content="Content Title">
-    <meta name="twitter:description" content="Content description less than 200 characters">
-    <meta name="twitter:image" content="https://example.com/image.jpg">
+    <title>Studiolo</title>
+
+    <meta property="og:image"            content="./assets/flyer.jpg">  <!-- Web page thumbnail -->
+    <meta property="og:site_name"        content="Studiolo">                     <!-- Web site title -->
+    <meta property="og:title"            content="Studiolo">                    <!-- Web page title -->
+    <meta property="og:type"             content="website">
+    <meta property="og:url"              content="https://studiolobelleville.com"> <!-- Url to this web page -->
 
   </head>
   <body>
 
-    <div id="viewport"></div>
+    <div id="logo">
+      <img src="./assets/studiolo_logo.svg" alt="Studiolo">
+    </div>
+
+    <a href="mailto:studiolo.belleville@gmail.com" id="contact">
+      <img src="./assets/contact.svg" alt="Contact">
+    </a>
+
+    <div id="viewport">
+      <div id="flyer">
+        <img src="./assets/flyer.jpg" alt="">
+      </div>
+    </div>
 
 
   <script src="./index.js"></script>
 
   <!-- Google Analytics. -->
-  <script type="text/javascript">
+  <!-- <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-XXXXXXXX-XX']);
     _gaq.push(['_trackPageview']);
@@ -47,7 +44,7 @@
       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : '//www') + '.google-analytics.com/ga.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
-  </script>
+  </script> -->
 
   </body>
 </html>

@@ -1,10 +1,66 @@
+@import 'node_modules/rupture-sass/rupture';
+
+$md: 1024px;
+
+* {
+  box-sizing: border-box;
+}
+
 body {
 	margin: 0;
 	padding: 0;
 	color: #000;
 }
 
-#viewport {
+#logo, #contact {
+  position: fixed;
+  top: 2rem;
+  width: 10rem;
+  z-index: 10;
+  @include below($md) {
+    width: 8rem;
+  }
+}
 
+#logo {
+  left: 2rem;
+  @include below($md) {
+    left: 1rem;
+  }
+}
+
+#contact {
+  right: 2rem;
+  transition: transform 400ms ease;
+  @include below($md) {
+    right: -1rem;
+  }
+  &:hover {
+    @include above($md + 1) {
+      transform: skewY(10deg);
+      transition: transform 200ms ease;
+    }
+  }
+}
+
+#viewport {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  #flyer {
+    width: 100%;
+    height: 100%;
+    padding: 12rem;
+    @include below($md) {
+      padding: 7rem 1rem;
+    }
+    img {
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+    }
+  }
 }
 

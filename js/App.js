@@ -1,7 +1,6 @@
 import LazySizes from './components/Lazysizes';
 import Loader from './components/Loader';
 import Links from './components/Links';
-import Drag from './components/Drag';
 import debounce from 'lodash/debounce';
 
 const App = {
@@ -26,7 +25,6 @@ const App = {
   },
   interact: async _ => {
     await Links.init();
-    await Drag.init();
   }
 };
 
